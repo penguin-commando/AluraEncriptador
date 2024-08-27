@@ -1,0 +1,135 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f8fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container split into two parts */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.interaction-area {
+    background-color: #6c8dbf; /* Dark pastel blue */
+    color: #ffffff;
+    flex: 2; /* Adjusted to take more space */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.result-area {
+    background-color: #ffffff;
+    flex: 1; /* Adjusted to take less space */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+    display: flex; /* Make sure the result-area is a flex container */
+    flex-direction: column; /* Align children in a column */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+/* Center the text input box in the blue area */
+.text-input-box {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #1d3b6f; /* Dark blue */
+    color: #ffffff;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #365b8b;
+    transform: scale(1.05);
+}
+
+/* Press effect for the button */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder image container */
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+    display: block;
+    margin: auto;
+}
+
+.result-text {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

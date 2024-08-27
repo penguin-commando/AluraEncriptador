@@ -21,7 +21,7 @@ El proyecto está dividido en dos secciones principales:
 2. **Sección de Resultados (Sección Blanca):**
    - Muestra el texto encriptado o desencriptado.
    - Un botón permite copiar el resultado al portapapeles.
-   - Tres imágenes placeholder se visualizan dependiendo de la acción realizada:
+   - Tres imágenes se visualizan dependiendo de la acción realizada:
      - Una imagen por defecto cuando no se ha encontrado texto.
      - Una imagen para cuando se encripta el texto.
      - Una imagen para cuando se desencripta el texto.
@@ -44,16 +44,20 @@ El proyecto está dividido en dos secciones principales:
 
 ## Compatibilidad
 
-Este proyecto está diseñado para ser responsivo y funcionar adecuadamente en dispositivos de escritorio, tabletas y móviles. Se han incluido `media queries` en el archivo `style.css` para asegurar una buena presentación en diferentes tamaños de pantalla.
+Este proyecto está diseñado (o se intentó al menos) para ser responsivo y funcionar adecuadamente en dispositivos de escritorio, tabletas y móviles. Se han incluido `media queries` en el archivo `style.css` para asegurar una buena presentación en diferentes tamaños de pantalla.
 
 ## Comentarios en el Código
 
-El código en `index.html`, `style.css`, y `app.js` incluye comentarios detallados para explicar cada sección y funcionalidad, facilitando la comprensión y modificación del proyecto.
+El código en `index.html`, `style.css`, y `app.js` incluye comentarios detallados para explicar cada sección y funcionalidad, facilitando la comprensión y modificación del proyecto. (ojalá si sean comprensibles.)
 
 ## Contribuciones
 
-Las contribuciones a este proyecto son bienvenidas. Si tienes ideas para mejorar el proyecto o encuentras algún error, por favor, crea un `issue` o envía un `pull request` en el repositorio correspondiente.
+Las contribuciones a este proyecto se reciben. Si tienes ideas para mejorar el proyecto o encuentras algún error, por favor, envíame un mensaje.
 
 ## Licencia
 
 Este proyecto está bajo la licencia MIT, lo que significa que eres libre de usar, modificar y distribuir el código según lo desees, siempre y cuando incluyas la licencia original.
+
+## Seguridad
+
+Nada de este proyecto borrará la carpeta System32, pinky promise.
